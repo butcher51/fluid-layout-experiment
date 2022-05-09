@@ -1,0 +1,90 @@
+:root {
+    --header-height:6vw;
+    --footer-height:6vw;
+}
+
+body {
+	background-color: #222;
+	color: #fff;
+	font-size: 1.5vw;
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+	display: grid;
+	grid-template-columns: repeat(12, [col-start] 1fr);
+	grid-column-gap: 1vw;
+	grid-row-gap: 0;
+}
+.row {
+    grid-column: span 12;
+    display: grid;
+	grid-template-columns: repeat(12, [col-start] 1fr);
+	grid-column-gap: 1vw;
+	grid-row-gap: 0;
+}
+.col1 {
+
+}
+.col2 {
+	grid-column: span 2;
+}
+.col3 {
+	grid-column: span 3;
+}
+.col4 {
+	grid-column: span 4;
+}
+.col5 {
+	grid-column: span 5;
+}
+.col6 {
+	grid-column: span 6;
+}
+.col7 {
+	grid-column: span 7;
+}
+.col8 {
+	grid-column: span 8;
+}
+.col9 {
+	grid-column: span 9;
+}
+.col10 {
+	grid-column: span 10;
+}
+.col11 {
+	grid-column: span 11;
+}
+.col12 {
+	grid-column: span 12;
+}
+header {
+    grid-column: span 12;
+    height:var(--footer-height);
+    background: #555;
+}
+main {
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+    grid-column: span 12;
+    display: grid;
+	grid-template-columns: repeat(12, [col-start] 1fr);
+	grid-column-gap: 1vw;
+	grid-row-gap: 0;
+}
+footer {
+    grid-column: span 12;
+    height:var(--footer-height);
+    background: #555;
+}
+.left {
+    
+}
+.content {
+    overflow: auto;
+}
+.bigContent {
+
+}
